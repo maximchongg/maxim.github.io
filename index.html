@@ -35,6 +35,8 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <canvas id="starfield" class="hero-canvas"></canvas>
+        
         <div class="hero-background">
             <div class="hero-gradient"></div>
         </div>
@@ -48,7 +50,7 @@
             
             <h1 class="hero-main-title fade-in-delay-1">
                 I help transform ideas<br>
-                into seamless <span class="italic-gradient">AI-powered experiences</span>
+                into seamless <span class="italic-gradient">AI&#8209;powered&nbsp;experiences</span>
             </h1>
             
             <div class="hero-intro fade-in-delay-2">
@@ -197,100 +199,99 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Projects Section -->
     <section id="experience" class="experience section-padding">
         <div class="container">
-            <h2 class="section-title reveal">Professional Experience</h2>
-            <p class="section-subtitle reveal">Here are some of my recent works</p>
+            <p class="projects-label">FEATURED CASE STUDIES</p>
+            <h2 class="projects-main-title">Curated <span class="italic-gradient">work</span></h2>
             
-            <div class="projects-grid">
-                <!-- PSA Hackathon - Featured Project -->
-                <div class="project-card featured reveal-scale">
-                    <div class="award-badge">
-                        <i class="fas fa-trophy"></i>
-                        <span>TOP 15 FINALIST</span>
-                    </div>
-                    <div class="project-image">
-                        <img src="assets/images/prizeceremonygroupshot.png" alt="PSA Hackathon Prize Ceremony">
-                        <div class="project-overlay">
-                            <a href="https://github.com/maximchongg/PSA_hackathon" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+            <div class="curated-projects-grid">
+                <!-- PSA Hackathon Project -->
+                <div class="curated-project-card reveal-scale">
+                    <div class="curated-project-visual">
+                        <div class="project-mockup">
+                            <img src="assets/images/prizeceremonygroupshot.png" alt="PSA Hackathon">
                         </div>
+                        <a href="https://github.com/maximchongg/PSA_hackathon" class="view-details-link" target="_blank">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                    <div class="project-info">
-                        <h3>🚢 PORTNET AI Operations System</h3>
-                        <p>AI-powered incident management system for PSA PORTNET® Level 2 operations. Achieved Top 15 at PSA Hackathon 2024 with LangGraph orchestration, FAISS vector search, and intelligent root cause analysis.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">LangGraph</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">OpenAI</span>
-                            <span class="tag">FAISS</span>
-                            <span class="tag">n8n</span>
+                    
+                    <div class="curated-project-info">
+                        <div class="project-title-section">
+                            <i class="fas fa-trophy project-icon"></i>
+                            <h3>PSA PORTNET AI System</h3>
                         </div>
-                        <div class="project-gallery">
-                            <img src="assets/images/dashboard.png" alt="Dashboard Interface" title="Real-time incident monitoring dashboard">
-                            <img src="assets/images/submissinoincident.png" alt="Incident Submission" title="AI-powered incident submission form">
-                            <img src="assets/images/generatedincidents.png" alt="Generated Analysis" title="Automated incident analysis">
-                            <img src="assets/images/n8nflow.png" alt="Workflow Automation" title="n8n workflow integration">
+                        <p class="project-description">
+                            A Top 15 finalist project for PSA Hackathon - AI-powered incident management system with LangGraph orchestration and intelligent root cause analysis
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-plus"></i>
+                                <span>LangGraph AI orchestration for automated workflows</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-plus"></i>
+                                <span>FAISS vector search for intelligent incident matching</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-plus"></i>
+                                <span>Real-time dashboard with incident monitoring</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 - Verztec Chatbot Capstone -->
-                <div class="project-card featured reveal-scale">
-                    <div class="award-badge">
-                        <i class="fas fa-medal"></i>
-                        <span>2ND PLACE CAPSTONE</span>
-                    </div>
-                    <div class="project-image">
-                        <img src="assets/images/project2.jpg" alt="Verztec Chatbot Award Ceremony">
-                        <div class="project-overlay">
-                            <a href="https://github.com/maximchongADO/ICP_Verztec_Chatbot" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>💬 Verztec AI Helpdesk Chatbot</h3>
-                        <p>Award-winning enterprise chatbot with 3D avatar assistant for internal helpdesk automation. Features FAISS vector search, RAG (Retrieval Augmented Generation), agentic AI capabilities, HR escalation system, and a live 3D avatar built with Blender and Mixamo. Recognized with 2nd place by Verztec CEO.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">FAISS</span>
-                            <span class="tag">RAG</span>
-                            <span class="tag">LangChain</span>
-                            <span class="tag">Agentic AI</span>
-                            <span class="tag">3D Avatar</span>
-                            <span class="tag">Blender</span>
-                        </div>
-                        <div class="project-gallery">
-                            <img src="assets/images/verztecchatbothomepage.png" alt="Verztec Landing Page" title="Intelligent Assistant for Modern Workplaces">
-                            <img src="assets/images/Chatbotpageverztecavatar.png" alt="Chat with 3D Avatar" title="AI chat with live 3D avatar assistant">
-                            <img src="assets/images/verztecdashboard.png" alt="Analytics Dashboard" title="Chat analytics and insights">
-                            <img src="assets/images/1754302370958.jpeg" alt="HR Escalation System" title="Agentic AI escalation to HR">
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">LangGraph</span>
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">OpenAI</span>
+                            <span class="tech-badge">FAISS</span>
+                            <span class="tech-badge">n8n</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card reveal-scale">
-                    <div class="project-image">
-                        <img src="assets/images/project3.jpg" alt="Project 3">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                <!-- Verztec Chatbot Project -->
+                <div class="curated-project-card reveal-scale">
+                    <div class="curated-project-visual">
+                        <div class="project-mockup">
+                            <img src="assets/images/verztecchatbothomepage.png" alt="Verztec AI Chatbot">
                         </div>
+                        <a href="https://github.com/maximchongADO/ICP_Verztec_Chatbot" class="view-details-link" target="_blank">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                    <div class="project-info">
-                        <h3>Project Name 3</h3>
-                        <p>Beautiful design meets powerful functionality</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">API</span>
+                    
+                    <div class="curated-project-info">
+                        <div class="project-title-section">
+                            <i class="fas fa-medal project-icon"></i>
+                            <h3>Verztec AI Helpdesk</h3>
+                        </div>
+                        <p class="project-description">
+                            2nd Place Capstone Project - Enterprise chatbot with 3D avatar assistant for internal helpdesk automation using RAG and agentic AI
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-plus"></i>
+                                <span>Live 3D avatar assistant built with Blender & Mixamo</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-plus"></i>
+                                <span>RAG-powered knowledge base with FAISS vector search</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-plus"></i>
+                                <span>Agentic AI for automated HR ticket escalation</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">FAISS</span>
+                            <span class="tech-badge">RAG</span>
+                            <span class="tech-badge">LangChain</span>
+                            <span class="tech-badge">Blender</span>
                         </div>
                     </div>
                 </div>

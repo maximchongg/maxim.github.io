@@ -1,4 +1,102 @@
 // ============================================
+// STARFIELD BACKGROUND ANIMATION
+// ============================================
+
+function initStarfield() {
+    const canvas = document.getElementById('starfield');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+    let animationId;
+    
+    // Set canvas size
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    
+    // Star class
+    class Star {
+        constructor() {
+            this.reset();
+        }
+        
+        reset() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 2;
+            this.speedX = (Math.random() - 0.5) * 0.5;
+            this.speedY = (Math.random() - 0.5) * 0.5;
+            this.opacity = Math.random() * 0.5 + 0.3;
+            this.twinkleSpeed = Math.random() * 0.02 + 0.01;
+        }
+        
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            
+            // Twinkle effect
+            this.opacity += this.twinkleSpeed;
+            if (this.opacity > 1 || this.opacity < 0.3) {
+                this.twinkleSpeed *= -1;
+            }
+            
+            // Reset if out of bounds
+            if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+                this.reset();
+            }
+        }
+        
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+            ctx.fill();
+        }
+    }
+    
+    // Create stars
+    function createStars(count = 200) {
+        stars = [];
+        for (let i = 0; i < count; i++) {
+            stars.push(new Star());
+        }
+    }
+    
+    // Animation loop
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        stars.forEach(star => {
+            star.update();
+            star.draw();
+        });
+        
+        animationId = requestAnimationFrame(animate);
+    }
+    
+    // Initialize
+    createStars(150);
+    animate();
+    
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', () => {
+        cancelAnimationFrame(animationId);
+    });
+}
+
+// Initialize starfield when DOM is loaded
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initStarfield);
+} else {
+    initStarfield();
+}
+
+// ============================================
 // NAVIGATION FUNCTIONALITY
 // ============================================
 
