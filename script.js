@@ -320,12 +320,62 @@ projectCards.forEach(card => {
 });
 
 // ============================================
+// IMAGE LIGHTBOX FOR PROJECT GALLERIES
+// ============================================
+
+function createLightbox() {
+    // Create lightbox HTML
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = `
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" src="" alt="">
+        <div class="lightbox-caption"></div>
+    `;
+    document.body.appendChild(lightbox);
+    
+    // Add click handlers to all gallery images
+    document.querySelectorAll('.project-gallery img').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+            const lightboxImg = lightbox.querySelector('.lightbox-content');
+            const caption = lightbox.querySelector('.lightbox-caption');
+            
+            lightboxImg.src = img.src;
+            caption.textContent = img.title || img.alt;
+            lightbox.classList.add('active');
+        });
+    });
+    
+    // Close lightbox
+    lightbox.querySelector('.lightbox-close').addEventListener('click', () => {
+        lightbox.classList.remove('active');
+    });
+    
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.classList.remove('active');
+        }
+    });
+    
+    // ESC key to close
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+        }
+    });
+}
+
+// ============================================
 // INITIALIZE ALL ANIMATIONS ON PAGE LOAD
 // ============================================
 
 window.addEventListener('load', () => {
     // Add loaded class to body for any CSS animations
     document.body.classList.add('loaded');
+    
+    // Initialize lightbox for images
+    createLightbox();
     
     // Start observing elements
     console.log('Portfolio website loaded successfully! 🚀');
