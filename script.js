@@ -367,6 +367,62 @@ function createLightbox() {
 }
 
 // ============================================
+// TECH ICONS SCATTER/GATHER ANIMATION
+// ============================================
+
+function initTechIcons() {
+    const icons = document.querySelectorAll('.tech-icon');
+    const container = document.querySelector('.tech-icons-container');
+    
+    if (!icons.length || !container) return;
+    
+    // Generate random scatter positions for each icon
+    icons.forEach((icon, index) => {
+        const angle = (Math.random() * 360) * (Math.PI / 180);
+        const distance = 200 + Math.random() * 300;
+        const scatterX = Math.cos(angle) * distance;
+        const scatterY = Math.sin(angle) * distance;
+        const scatterRotate = Math.random() * 360 - 180;
+        
+        icon.style.setProperty('--scatter-x', `${scatterX}px`);
+        icon.style.setProperty('--scatter-y', `${scatterY}px`);
+        icon.style.setProperty('--scatter-rotate', `${scatterRotate}deg`);
+        icon.style.transitionDelay = `${index * 0.03}s`;
+    });
+    
+    // Scroll observer for animation
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Gather icons when scrolling into view
+                icons.forEach(icon => {
+                    icon.classList.remove('scattered');
+                    icon.classList.add('gathered');
+                });
+            } else {
+                // Scatter icons when scrolling out
+                icons.forEach(icon => {
+                    icon.classList.remove('gathered');
+                    icon.classList.add('scattered');
+                });
+            }
+        });
+    }, {
+        threshold: 0.3,
+        rootMargin: '-100px'
+    });
+    
+    observer.observe(container);
+    
+    // Initially scatter
+    setTimeout(() => {
+        icons.forEach(icon => {
+            icon.classList.add('scattered');
+        });
+    }, 100);
+}
+
+// ============================================
 // INITIALIZE ALL ANIMATIONS ON PAGE LOAD
 // ============================================
 
@@ -376,6 +432,9 @@ window.addEventListener('load', () => {
     
     // Initialize lightbox for images
     createLightbox();
+    
+    // Initialize tech icons animation
+    initTechIcons();
     
     // Start observing elements
     console.log('Portfolio website loaded successfully! 🚀');

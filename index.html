@@ -12,14 +12,18 @@
     <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">Portfolio</a>
+            <a href="#home" class="nav-logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="white"/>
+                    <text x="20" y="28" text-anchor="middle" fill="black" font-family="Inter, sans-serif" font-size="18" font-weight="700">MC</text>
+                </svg>
+            </a>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#projects" class="nav-link">Work</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-link btn-nav-cta">Book a Call</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -31,75 +35,83 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
         </div>
+        
         <div class="hero-content">
-            <h1 class="hero-title fade-in">Hi, I'm <span class="highlight">Maxim Chong</span></h1>
-            <p class="hero-subtitle fade-in-delay-1">AI Developer | Data Science | Full Stack</p>
-            <p class="hero-description fade-in-delay-2">
-                Building intelligent solutions that transform ideas into reality. PSA Hackathon Top 15 Finalist 🏆
-            </p>
-            <div class="hero-buttons fade-in-delay-3">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <div class="hero-badge fade-in">
+                <span class="badge-new">New</span>
+                <span class="badge-text">PSA Hackathon Top 15 Finalist is live!</span>
+                <i class="fas fa-arrow-right"></i>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
+            
+            <h1 class="hero-main-title fade-in-delay-1">
+                I help transform ideas<br>
+                into seamless <span class="italic-gradient">AI-powered experiences</span>
+            </h1>
+            
+            <div class="hero-intro fade-in-delay-2">
+                <span class="hero-greeting">Hello, I'm Maxim Chong</span>
+                <img src="assets/images/7aabe15e-0982-42a0-ace3-e69c3a5ad360.jpeg" alt="Maxim Chong" class="hero-avatar">
+                <span class="hero-role">an AI Developer & Full Stack Engineer</span>
+            </div>
+            
+            <div class="hero-buttons fade-in-delay-3">
+                <a href="#contact" class="btn btn-hero-primary">
+                    Let's Connect
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="mailto:maximchongjm06@gmail.com" class="btn btn-hero-secondary">
+                    <i class="far fa-copy"></i>
+                    maximchongjm06@gmail.com
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about section-padding">
         <div class="container">
-            <h2 class="section-title reveal">About Me</h2>
-            <div class="about-content">
-                <div class="about-text reveal">
-                    <p class="about-intro">
-                        Passionate about building AI-powered solutions that solve real-world problems. 
-                        I specialize in automation, data science, and full-stack development.
-                    </p>
+            <p class="about-label">MORE ABOUT ME</p>
+            
+            <div class="about-grid">
+                <div class="about-text-column reveal">
+                    <h2 class="about-main-title">
+                        I'm Maxim, a<br>
+                        creative <span class="gradient-text">engineer</span>
+                    </h2>
                     
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-briefcase"></i>
-                            <div>
-                                <h4>Current Role</h4>
-                                <p>Cyber Advisory Intern at KPMG, developing Agentic AI solutions to automate security workflows</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-trophy"></i>
-                            <div>
-                                <h4>Achievements</h4>
-                                <p>PSA Hackathon Top 15 Finalist • 2nd Place Capstone Project • Multiple AI Projects</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <div>
-                                <h4>Expertise</h4>
-                                <p>AI/ML Development • Cybersecurity Automation • Full-Stack Engineering • Data Science</p>
-                            </div>
-                        </div>
+                    <div class="about-description">
+                        <p>
+                            I'm Maxim Chong, a proactive AI developer passionate about creating intelligent solutions that make a difference. From agentic AI to data science, I thrive on solving complex problems with clean, efficient code. My expertise spans Python, LangChain, and full-stack development, and I'm always eager to learn more.
+                        </p>
+                        
+                        <p>
+                            When I'm not immersed in work, I'm exploring new ideas and staying curious. Life's about balance, and I love embracing every part of it.
+                        </p>
+                        
+                        <p>
+                            I believe in waking up each day eager to make a difference!
+                        </p>
                     </div>
                     
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="2">0</span>
-                            <span class="stat-label">Internships</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="2">0</span>
-                            <span class="stat-label">Hackathon Finalist</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="8">0</span>
-                            <span class="stat-label">AI Projects</span>
-                        </div>
+                    <div class="about-social-links">
+                        <a href="https://www.linkedin.com/in/maxim-chong-013853273" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/maximchongg" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:maximchongjm06@gmail.com" title="Email">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="about-image-column reveal">
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/7aabe15e-0982-42a0-ace3-e69c3a5ad360.jpeg" alt="Maxim Chong" class="about-profile-image">
                     </div>
                 </div>
             </div>
@@ -289,10 +301,35 @@
     <!-- Skills Section -->
     <section id="skills" class="skills section-padding">
         <div class="container">
-            <h2 class="section-title reveal">Skills & Expertise</h2>
-            <p class="section-subtitle reveal">Technologies I work with</p>
+            <div class="skills-header">
+                <p class="skills-label">MY SKILLS</p>
+                <h2 class="skills-title">The Secret <span class="sauce">Sauce</span></h2>
+            </div>
             
-            <div class="skills-grid">
+            <div class="tech-icons-container">
+                <div class="tech-icon tech-react" data-name="React"><i class="fab fa-react"></i></div>
+                <div class="tech-icon tech-node" data-name="Node.js"><i class="fab fa-node"></i></div>
+                <div class="tech-icon tech-js" data-name="JavaScript"><i class="fab fa-js"></i></div>
+                <div class="tech-icon tech-python" data-name="Python"><i class="fab fa-python"></i></div>
+                <div class="tech-icon tech-docker" data-name="Docker"><i class="fab fa-docker"></i></div>
+                <div class="tech-icon tech-git" data-name="Git"><i class="fab fa-git-alt"></i></div>
+                <div class="tech-icon tech-github" data-name="GitHub"><i class="fab fa-github"></i></div>
+                <div class="tech-icon tech-aws" data-name="AWS"><i class="fab fa-aws"></i></div>
+                <div class="tech-icon tech-linux" data-name="Linux"><i class="fab fa-linux"></i></div>
+                <div class="tech-icon tech-n8n" data-name="n8n"><i class="fas fa-project-diagram"></i></div>
+                <div class="tech-icon tech-fastapi" data-name="FastAPI"><i class="fas fa-bolt"></i></div>
+                <div class="tech-icon tech-mongodb" data-name="MongoDB"><i class="fas fa-database"></i></div>
+                <div class="tech-icon tech-postgresql" data-name="PostgreSQL"><i class="fas fa-server"></i></div>
+                <div class="tech-icon tech-ai" data-name="AI/ML"><i class="fas fa-brain"></i></div>
+                <div class="tech-icon tech-security" data-name="Security"><i class="fas fa-shield-alt"></i></div>
+                <div class="tech-icon tech-langchain" data-name="LangChain"><i class="fas fa-link"></i></div>
+                <div class="tech-icon tech-openai" data-name="OpenAI"><i class="fas fa-robot"></i></div>
+                <div class="tech-icon tech-api" data-name="API"><i class="fas fa-plug"></i></div>
+                <div class="tech-icon tech-cloud" data-name="Cloud"><i class="fas fa-cloud"></i></div>
+                <div class="tech-icon tech-analytics" data-name="Analytics"><i class="fas fa-chart-line"></i></div>
+            </div>
+            
+            <div class="skills-grid-old" style="display: none;">
                 <div class="skill-category reveal-bottom">
                     <div class="skill-icon">
                         <i class="fas fa-shield-alt"></i>
