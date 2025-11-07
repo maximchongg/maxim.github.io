@@ -521,6 +521,38 @@ function initTechIcons() {
 }
 
 // ============================================
+// TIMELINE PROGRESS FILL ANIMATION
+// ============================================
+
+function updateTimelineProgress() {
+    const timeline = document.querySelector('.experience-timeline');
+    if (!timeline) return;
+    
+    const timelineRect = timeline.getBoundingClientRect();
+    const timelineTop = timelineRect.top + window.pageYOffset;
+    const timelineHeight = timelineRect.height;
+    const windowHeight = window.innerHeight;
+    const scrollPosition = window.pageYOffset + windowHeight / 2;
+    
+    // Calculate progress percentage
+    let progress = ((scrollPosition - timelineTop) / timelineHeight) * 100;
+    progress = Math.max(0, Math.min(100, progress));
+    
+    // Update the gradient fill
+    timeline.style.setProperty('--timeline-progress', progress + '%');
+    
+    // Apply the progress to the ::after pseudo-element
+    const afterElement = window.getComputedStyle(timeline, '::after');
+    if (afterElement) {
+        timeline.style.setProperty('--fill-height', progress + '%');
+    }
+}
+
+// Initialize timeline progress on load and scroll
+window.addEventListener('scroll', updateTimelineProgress);
+window.addEventListener('resize', updateTimelineProgress);
+
+// ============================================
 // INITIALIZE ALL ANIMATIONS ON PAGE LOAD
 // ============================================
 
@@ -533,6 +565,9 @@ window.addEventListener('load', () => {
     
     // Initialize tech icons animation
     initTechIcons();
+    
+    // Initialize timeline progress
+    updateTimelineProgress();
     
     // Start observing elements
     console.log('Portfolio website loaded successfully! 🚀');
