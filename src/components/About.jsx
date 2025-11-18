@@ -1,4 +1,4 @@
-﻿import React, { useRef } from 'react';
+import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 const About = () => {
@@ -9,32 +9,17 @@ const About = () => {
     <section 
       id="about" 
       ref={sectionRef}
-      className="w-full relative bg-gradient-to-b from-black via-neutral-900 to-black py-32 overflow-hidden"
+      className="w-full relative bg-neutral-950 py-32 overflow-hidden"
     >
-      <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isInView ? 0.1 : 0 }}
-          transition={{ duration: 1.5 }}
-          className="absolute top-1/4 -left-20 w-96 h-96 bg-green-500/20 rounded-full blur-3xl"
-        />
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isInView ? 0.1 : 0 }}
-          transition={{ duration: 1.5, delay: 0.3 }}
-          className="absolute bottom-1/4 -right-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"
-        />
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10 relative z-10">
-        <motion.p 
+        <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center text-sm font-semibold tracking-wider text-green-400 uppercase mb-12"
+          className="text-lg md:text-4xl mb-12 text-white text-center"
         >
-          MORE ABOUT ME
-        </motion.p>
+          More About Me
+        </motion.h2>
         
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -42,10 +27,9 @@ const About = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
-              I'm Maxim, a<br />
-              creative <span className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-500 bg-clip-text text-transparent">engineer</span>
-            </h2>
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-8 leading-tight">
+              I'm Maxim, a creative engineer
+            </h3>
             
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p>
