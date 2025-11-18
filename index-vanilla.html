@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio - Showcasing my work and skills">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="white"/>
+                    <text x="20" y="28" text-anchor="middle" fill="black" font-family="Inter, sans-serif" font-size="18" font-weight="700">MC</text>
+                </svg>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Work</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link btn-nav-cta">Book a Call</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="starfield" class="hero-canvas"></canvas>
+        
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge fade-in">
+                <span class="badge-new">New</span>
+                <span class="badge-text">PSA Hackathon Top 15 Finalist is live!</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            
+            <h1 class="hero-main-title fade-in-delay-1">
+                I help transform ideas<br>
+                into seamless <span class="italic-gradient">AI&#8209;powered&nbsp;experiences</span>
+            </h1>
+            
+            <div class="hero-intro fade-in-delay-2">
+                <span class="hero-greeting">Hello, I'm Maxim Chong</span>
+                <img src="assets/images/7aabe15e-0982-42a0-ace3-e69c3a5ad360.jpeg" alt="Maxim Chong" class="hero-avatar">
+                <span class="hero-role">an AI Developer & Full Stack Engineer</span>
+            </div>
+            
+            <div class="hero-buttons fade-in-delay-3">
+                <a href="#contact" class="btn btn-hero-primary">
+                    Let's Connect
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="mailto:maximchongjm06@gmail.com" class="btn btn-hero-secondary">
+                    <i class="far fa-copy"></i>
+                    maximchongjm06@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <p class="about-label">MORE ABOUT ME</p>
+            
+            <div class="about-grid">
+                <div class="about-text-column reveal">
+                    <h2 class="about-main-title">
+                        I'm Maxim, a<br>
+                        creative <span class="gradient-text">engineer</span>
+                    </h2>
+                    
+                    <div class="about-description">
+                        <p>
+                            I'm Maxim Chong, a proactive AI developer passionate about creating intelligent solutions that make a difference. From agentic AI to data science, I thrive on solving complex problems with clean, efficient code. My expertise spans Python, LangChain, and full-stack development, and I'm always eager to learn more.
+                        </p>
+                        
+                        <p>
+                            When I'm not immersed in work, I'm exploring new ideas and staying curious. Life's about balance, and I love embracing every part of it.
+                        </p>
+                        
+                        <p>
+                            I believe in waking up each day eager to make a difference!
+                        </p>
+                    </div>
+                    
+                    <div class="about-social-links">
+                        <a href="https://www.linkedin.com/in/maxim-chong-013853273" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/maximchongg" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:maximchongjm06@gmail.com" title="Email">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="about-image-column reveal">
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/7aabe15e-0982-42a0-ace3-e69c3a5ad360.jpeg" alt="Maxim Chong" class="about-profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="projects" class="experience-section section-padding">
+        <div class="container">
+            <p class="experience-label">THE EXPERIENCE</p>
+            <h2 class="experience-title">
+                Experience That Brings<br>
+                <span class="gradient-italic">Ideas to Life</span>
+            </h2>
+            
+            <div class="experience-timeline">
+                <!-- Experience Item 1 - Right Side -->
+                <div class="experience-item reveal-right">
+                    <div class="experience-date">SEP 2025 - PRESENT</div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3 class="company-name">KPMG</h3>
+                                <p class="company-location">
+                                    <i class="fas fa-map-marker-alt"></i> Singapore
+                                </p>
+                            </div>
+                            <img src="assets/images/OIP.jpeg" alt="KPMG" class="company-logo-img">
+                        </div>
+                        
+                        <h4 class="role-title">Cyber Advisory Intern</h4>
+                        
+                        <div class="role-description">
+                            <p>Architected enterprise-scale <strong>Agentic AI Development</strong> frameworks to automate and enhance cybersecurity processes. Building intelligent AI systems that streamline security workflows, improve efficiency by <strong>25%</strong>, and enable autonomous decision-making in cyber advisory operations.</p>
+                            
+                            <p>Delivered high-performance AI applications using <strong>Python, LangChain, and FastAPI</strong> with advanced orchestration strategies, achieving <strong>30% increase</strong> in automation efficiency and <strong>20% improvement</strong> in threat detection accuracy.</p>
+                            
+                            <p>Implemented autonomous agent architectures across security operations, reducing manual intervention by <strong>40%</strong> and establishing AI-driven workflows for enhanced operational excellence and maintainability.</p>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">Agentic AI</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Cybersecurity</span>
+                            <span class="tech-tag">Automation</span>
+                            <span class="tech-tag">RAG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 - Left Side -->
+                <div class="experience-item experience-item-left reveal-left">
+                    <div class="experience-date">SEP 2024 - OCT 2024</div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Bank of Singapore</h3>
+                                <p class="company-location">
+                                    <i class="fas fa-map-marker-alt"></i> Singapore
+                                </p>
+                            </div>
+                            <img src="assets/images/98bdd23b40b85e17722893a2cb8c97f1.jpg" alt="Bank of Singapore" class="company-logo-img">
+                        </div>
+                        
+                        <h4 class="role-title">Data Science Intern</h4>
+                        
+                        <div class="role-description">
+                            <p>Gained hands-on experience in <strong>financial data analysis</strong> and banking technology. Architected data-driven solutions for digital banking, analyzing customer behavior patterns and optimizing data pipelines for <strong>6+ production applications</strong>.</p>
+                            
+                            <p>Contributed to <strong>predictive modeling projects</strong> with innovative ML solutions and best practices, improving model accuracy by <strong>18%</strong> and reducing processing time by <strong>35%</strong>.</p>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">Data Science</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Banking Analytics</span>
+                            <span class="tech-tag">FinTech</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="experience" class="experience section-padding">
+        <div class="container">
+            <p class="projects-label">FEATURED CASE STUDIES</p>
+            <h2 class="projects-main-title">Curated <span class="italic-gradient">work</span></h2>
+            
+            <div class="curated-projects-grid">
+                <!-- PSA Hackathon Project -->
+                <div class="curated-project-card reveal-scale">
+                    <div class="curated-project-visual">
+                        <div class="project-mockup">
+                            <img src="assets/images/prizeceremonygroupshot.png" alt="PSA Hackathon">
+                        </div>
+                        <a href="https://github.com/maximchongg/PSA_hackathon" class="view-details-link" target="_blank">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="curated-project-info">
+                        <div class="project-title-section">
+                            <i class="fas fa-trophy project-icon"></i>
+                            <h3>PSA PORTNET AI System</h3>
+                        </div>
+                        <p class="project-description">
+                            A Top 15 finalist project for PSA Hackathon - AI-powered incident management system with LangGraph orchestration and intelligent root cause analysis
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-plus"></i>
+                                <span>LangGraph AI orchestration for automated workflows</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-plus"></i>
+                                <span>FAISS vector search for intelligent incident matching</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-plus"></i>
+                                <span>Real-time dashboard with incident monitoring</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">LangGraph</span>
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">OpenAI</span>
+                            <span class="tech-badge">FAISS</span>
+                            <span class="tech-badge">n8n</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Verztec Chatbot Project -->
+                <div class="curated-project-card reveal-scale">
+                    <div class="curated-project-visual">
+                        <div class="project-mockup">
+                            <img src="assets/images/verztecchatbothomepage.png" alt="Verztec AI Chatbot">
+                        </div>
+                        <a href="https://github.com/maximchongADO/ICP_Verztec_Chatbot" class="view-details-link" target="_blank">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="curated-project-info">
+                        <div class="project-title-section">
+                            <i class="fas fa-medal project-icon"></i>
+                            <h3>Verztec AI Helpdesk</h3>
+                        </div>
+                        <p class="project-description">
+                            2nd Place Capstone Project - Enterprise chatbot with 3D avatar assistant for internal helpdesk automation using RAG and agentic AI
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-plus"></i>
+                                <span>Live 3D avatar assistant built with Blender & Mixamo</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-plus"></i>
+                                <span>RAG-powered knowledge base with FAISS vector search</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-plus"></i>
+                                <span>Agentic AI for automated HR ticket escalation</span>
+                            </div>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">FAISS</span>
+                            <span class="tech-badge">RAG</span>
+                            <span class="tech-badge">LangChain</span>
+                            <span class="tech-badge">Blender</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <div class="skills-header">
+                <p class="skills-label">MY SKILLS</p>
+                <h2 class="skills-title">The Secret <span class="sauce">Sauce</span></h2>
+            </div>
+            
+            <div class="tech-icons-container">
+                <div class="tech-icon tech-react" data-name="React"><i class="fab fa-react"></i></div>
+                <div class="tech-icon tech-node" data-name="Node.js"><i class="fab fa-node"></i></div>
+                <div class="tech-icon tech-js" data-name="JavaScript"><i class="fab fa-js"></i></div>
+                <div class="tech-icon tech-python" data-name="Python"><i class="fab fa-python"></i></div>
+                <div class="tech-icon tech-docker" data-name="Docker"><i class="fab fa-docker"></i></div>
+                <div class="tech-icon tech-git" data-name="Git"><i class="fab fa-git-alt"></i></div>
+                <div class="tech-icon tech-github" data-name="GitHub"><i class="fab fa-github"></i></div>
+                <div class="tech-icon tech-aws" data-name="AWS"><i class="fab fa-aws"></i></div>
+                <div class="tech-icon tech-linux" data-name="Linux"><i class="fab fa-linux"></i></div>
+                <div class="tech-icon tech-n8n" data-name="n8n"><i class="fas fa-project-diagram"></i></div>
+                <div class="tech-icon tech-fastapi" data-name="FastAPI"><i class="fas fa-bolt"></i></div>
+                <div class="tech-icon tech-mongodb" data-name="MongoDB"><i class="fas fa-database"></i></div>
+                <div class="tech-icon tech-postgresql" data-name="PostgreSQL"><i class="fas fa-server"></i></div>
+                <div class="tech-icon tech-ai" data-name="AI/ML"><i class="fas fa-brain"></i></div>
+                <div class="tech-icon tech-security" data-name="Security"><i class="fas fa-shield-alt"></i></div>
+                <div class="tech-icon tech-langchain" data-name="LangChain"><i class="fas fa-link"></i></div>
+                <div class="tech-icon tech-openai" data-name="OpenAI"><i class="fas fa-robot"></i></div>
+                <div class="tech-icon tech-api" data-name="API"><i class="fas fa-plug"></i></div>
+                <div class="tech-icon tech-cloud" data-name="Cloud"><i class="fas fa-cloud"></i></div>
+                <div class="tech-icon tech-analytics" data-name="Analytics"><i class="fas fa-chart-line"></i></div>
+            </div>
+            
+            <div class="skills-grid-old" style="display: none;">
+                <div class="skill-category reveal-bottom">
+                    <div class="skill-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity & Automation</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Security Automation <span>90%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Process Optimization <span>85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Security Workflows <span>85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">AI-Driven Security <span>87%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="87"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-bottom">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">LangChain/LangGraph <span>92%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">AI Agents <span>88%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">OpenAI API <span>90%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Vector Databases <span>85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-bottom">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Python <span>95%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">FastAPI/Flask <span>88%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript/Node.js <span>85%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Git/GitHub <span>92%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <p class="section-subtitle reveal">Let's create something amazing together</p>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>maximchongjm06@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <h3>Current Role</h3>
+                            <p>Cyber Advisory Intern @ KPMG</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Singapore</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/maximchongg" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/maxim-chong-013853273" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:maximchongjm06@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>Built with <i class="fas fa-heart"></i> using HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

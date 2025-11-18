@@ -1067,9 +1067,12 @@ body {
    PROFESSIONAL EXPERIENCE SECTION
    ============================================ */
 .experience-section {
-    background: #000000;
+    background: #ffffff;
     position: relative;
     padding: 120px 0 150px 0;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(168, 85, 247, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
 }
 
 .experience-label {
@@ -1077,7 +1080,7 @@ body {
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 3px;
-    color: rgba(255, 255, 255, 0.4);
+    color: #6b7280;
     text-transform: uppercase;
     margin-bottom: 16px;
 }
@@ -1085,11 +1088,11 @@ body {
 .experience-title {
     text-align: center;
     font-size: 3.5rem;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.2;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 120px;
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .experience-title .gradient-italic {
@@ -1098,7 +1101,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .experience-timeline {
@@ -1110,7 +1113,7 @@ body {
     --fill-height: 0%;
 }
 
-/* Center vertical line - gray background */
+/* Center vertical line - light gray background */
 .experience-timeline::before {
     content: '';
     position: absolute;
@@ -1118,8 +1121,8 @@ body {
     transform: translateX(-50%);
     top: 0;
     bottom: 0;
-    width: 3px;
-    background: rgba(255, 255, 255, 0.1);
+    width: 2px;
+    background: linear-gradient(to bottom, transparent 0%, #e5e7eb 5%, #e5e7eb 95%, transparent 100%);
     z-index: 1;
 }
 
@@ -1130,9 +1133,9 @@ body {
     left: 80px;
     transform: translateX(-50%);
     top: 0;
-    width: 3px;
+    width: 2px;
     height: var(--fill-height, 0%);
-    background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+    background: linear-gradient(180deg, #a855f7 0%, #3b82f6 50%, #ec4899 100%);
     z-index: 2;
     transition: height 0.3s ease-out;
 }
@@ -1182,28 +1185,29 @@ body {
     left: 80px;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+    width: 16px;
+    height: 16px;
+    background: #e5e7eb;
     border-radius: 50%;
-    border: 4px solid #000000;
-    box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.3), 0 0 20px rgba(139, 92, 246, 0.2);
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 1px #d1d5db, 0 2px 8px rgba(0, 0, 0, 0.1);
     z-index: 10;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .experience-item:hover::after {
-    width: 24px;
-    height: 24px;
-    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.5), 0 0 30px rgba(139, 92, 246, 0.4);
-    filter: brightness(1.2);
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #a855f7 0%, #3b82f6 50%, #ec4899 100%);
+    box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.3), 0 4px 12px rgba(168, 85, 247, 0.2);
+    filter: brightness(1.1);
 }
 
 .experience-date {
     font-size: 0.6875rem;
     font-weight: 700;
     letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.35);
+    color: #9ca3af;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
 }
@@ -1216,21 +1220,32 @@ body {
 }
 
 .experience-content:hover {
-    transform: translateX(4px);
+    transform: translateX(8px);
+}
+
+.experience-content:hover .company-name {
+    color: #7c3aed;
+}
+
+.experience-content:hover .role-title {
+    color: #2563eb;
 }
 
 .experience-header {
     margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .company-info {
-    margin-bottom: 16px;
+    flex: 1;
 }
 
 .company-name {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #1f2937;
     margin: 0 0 8px 0;
     letter-spacing: -0.5px;
     font-family: 'Inter', sans-serif;
@@ -1238,7 +1253,7 @@ body {
 
 .company-location {
     font-size: 0.8125rem;
-    color: rgba(255, 255, 255, 0.45);
+    color: #6b7280;
     margin: 4px 0;
     display: flex;
     align-items: center;
@@ -1252,16 +1267,22 @@ body {
 }
 
 .company-logo-img {
-    display: none;
+    display: block;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #f9fafb;
+    padding: 8px;
 }
 
 .role-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #374151;
     margin: 0 0 24px 0;
     letter-spacing: -0.5px;
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .role-description {
@@ -1271,7 +1292,7 @@ body {
 .role-description p {
     font-size: 0.9375rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.6);
+    color: #4b5563;
     margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
 }
@@ -1281,7 +1302,7 @@ body {
 }
 
 .role-description p strong {
-    color: #ffffff;
+    color: #1f2937;
     font-weight: 600;
 }
 
@@ -1293,21 +1314,19 @@ body {
 
 .tech-tag {
     padding: 6px 12px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 6px;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
     font-size: 0.6875rem;
-    color: rgba(255, 255, 255, 0.65);
+    color: #4b5563;
     font-weight: 500;
-    letter-spacing: 0.3px;
-    transition: all 0.3s ease;
-    font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease;
 }
 
 .tech-tag:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.85);
+    background: #e5e7eb;
+    border-color: #d1d5db;
+    color: #374151;
 }
 
 /* Responsive Design */
