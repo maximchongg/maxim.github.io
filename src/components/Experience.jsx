@@ -65,7 +65,7 @@ function Experience() {
         "Reduced manual intervention by 40% with autonomous agent architectures",
         "Established AI-driven workflows for enhanced operational excellence",
       ],
-      image: "/assets/images/kpmg-shutterstock_2246181643.avif",
+      image: `${import.meta.env.BASE_URL}assets/images/kpmg-shutterstock_2246181643.avif`,
       skills: ["Agentic AI", "Python", "LangChain", "FastAPI", "AI/ML", "Cybersecurity", "Automation", "RAG"],
     },
     {
@@ -82,7 +82,7 @@ function Experience() {
         "Reduced data processing time by 35%",
         "Implemented ML solutions following industry best practices",
       ],
-      image: "/assets/images/bank-of-singapore-employees-1.png",
+      image: `${import.meta.env.BASE_URL}assets/images/bank-of-singapore-employees-1.png`,
       skills: ["Data Science", "Python", "Machine Learning", "Banking Analytics", "FinTech"],
     },
   ];

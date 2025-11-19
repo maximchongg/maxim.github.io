@@ -325,7 +325,13 @@ const SphereImageGrid = ({
           }
         }}
       >
-        <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg border-4 border-white/30 bg-white/10 backdrop-blur-sm">
+        <div 
+          className="relative w-full h-full rounded-full overflow-hidden shadow-lg border-4 border-white/30 bg-white/10 backdrop-blur-sm"
+          style={{
+            transform: `rotateY(${-rotation.y}deg) rotateX(${-rotation.x}deg)`,
+            transformStyle: 'preserve-3d'
+          }}
+        >
           <div className="w-full h-full flex items-center justify-center text-4xl">
             {image.icon}
           </div>

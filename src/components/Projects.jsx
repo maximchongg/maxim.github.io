@@ -12,79 +12,79 @@ const Projects = () => {
     {
       title: "PSA Dashboard",
       link: "#",
-      thumbnail: "/assets/images/dashboard.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/dashboard.png`,
     },
     {
       title: "Generated Incidents",
       link: "#",
-      thumbnail: "/assets/images/generatedincidents.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/generatedincidents.png`,
     },
     {
       title: "Incident Submission",
       link: "#",
-      thumbnail: "/assets/images/submissinoincident.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/submissinoincident.png`,
     },
     {
       title: "N8N Workflow",
       link: "#",
-      thumbnail: "/assets/images/n8nflow.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/n8nflow.png`,
     },
     {
       title: "Prize Ceremony",
       link: "#",
-      thumbnail: "/assets/images/prizeceremonygroupshot.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/prizeceremonygroupshot.png`,
     },
     // Second row - Verztec Project images
     {
       title: "Verztec Homepage",
       link: "#",
-      thumbnail: "/assets/images/verztecchatbothomepage.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/verztecchatbothomepage.png`,
     },
     {
       title: "Verztec Dashboard",
       link: "#",
-      thumbnail: "/assets/images/verztecdashboard.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/verztecdashboard.png`,
     },
     {
       title: "Chatbot Avatar",
       link: "#",
-      thumbnail: "/assets/images/Chatbotpageverztecavatar.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/Chatbotpageverztecavatar.png`,
     },
     {
       title: "Award Ceremony",
       link: "#",
-      thumbnail: "/assets/images/verrztecaward.jpeg",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/verrztecaward.jpeg`,
     },
     {
       title: "Team Photo",
       link: "#",
-      thumbnail: "/assets/images/1754302370958.jpeg",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/1754302370958.jpeg`,
     },
     // Third row - repeated for effect
     {
       title: "PSA Dashboard View",
       link: "#",
-      thumbnail: "/assets/images/dashboard.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/dashboard.png`,
     },
     {
       title: "Incident Analytics",
       link: "#",
-      thumbnail: "/assets/images/generatedincidents.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/generatedincidents.png`,
     },
     {
       title: "Submission Portal",
       link: "#",
-      thumbnail: "/assets/images/submissinoincident.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/submissinoincident.png`,
     },
     {
       title: "Automation Flow",
       link: "#",
-      thumbnail: "/assets/images/n8nflow.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/n8nflow.png`,
     },
     {
       title: "Victory Moment",
       link: "#",
-      thumbnail: "/assets/images/prizeceremonygroupshot.png",
+      thumbnail: `${import.meta.env.BASE_URL}assets/images/prizeceremonygroupshot.png`,
     },
   ];
 

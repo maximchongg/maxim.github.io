@@ -83,7 +83,7 @@ const About = () => {
             <div className="relative w-80 h-80 md:w-96 md:h-96">
               <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-teal-500 rounded-3xl blur-2xl opacity-20"></div>
               <img 
-                src="assets/images/7aabe15e-0982-42a0-ace3-e69c3a5ad360.jpeg" 
+                src={`${import.meta.env.BASE_URL}assets/images/7aabe15e-0982-42a0-ace3-e69c3a5ad360.jpeg`}
                 alt="Maxim Chong" 
                 className="relative w-full h-full object-cover rounded-3xl shadow-2xl border-4 border-white/10"
               />

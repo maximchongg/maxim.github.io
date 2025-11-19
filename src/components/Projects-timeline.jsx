@@ -97,12 +97,12 @@ const PSAProject = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const images = [
-    "/assets/images/dashboard.png",
-    "/assets/images/generatedincidents.png",
-    "/assets/images/submissinoincident.png",
-    "/assets/images/n8nflow.png",
-    "/assets/images/prizeceremonygroupshot.png",
-    "/assets/images/verrztecaward.jpeg",
+    `${import.meta.env.BASE_URL}assets/images/dashboard.png`,
+    `${import.meta.env.BASE_URL}assets/images/generatedincidents.png`,
+    `${import.meta.env.BASE_URL}assets/images/submissinoincident.png`,
+    `${import.meta.env.BASE_URL}assets/images/n8nflow.png`,
+    `${import.meta.env.BASE_URL}assets/images/prizeceremonygroupshot.png`,
+    `${import.meta.env.BASE_URL}assets/images/verrztecaward.jpeg`,
   ];
 
   return (
@@ -234,9 +234,9 @@ const VerztecProject = () => {
   const [fullscreenImage, setFullscreenImage] = useState(null);
 
   const images = [
-    "/assets/images/verztecchatbothomepage.png",
-    "/assets/images/verztecdashboard.png",
-    "/assets/images/Chatbotpageverztecavatar.png",
+    `${import.meta.env.BASE_URL}assets/images/verztecchatbothomepage.png`,
+    `${import.meta.env.BASE_URL}assets/images/verztecdashboard.png`,
+    `${import.meta.env.BASE_URL}assets/images/Chatbotpageverztecavatar.png`,
   ];
 
   return (

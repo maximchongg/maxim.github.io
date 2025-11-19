@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="flex items-center justify-center gap-4 text-white text-lg mb-8 animate-fade-in-delay-2">
           <span>Hello, I'm Maxim Chong</span>
           <img 
-            src="assets/images/7aabe15e-0982-42a0-ace3-e69c3a5ad360.jpeg" 
+            src={`${import.meta.env.BASE_URL}assets/images/7aabe15e-0982-42a0-ace3-e69c3a5ad360.jpeg`}
             alt="Maxim Chong" 
             className="w-12 h-12 rounded-full object-cover border-2 border-white/20"
           />
