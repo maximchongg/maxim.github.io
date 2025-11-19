@@ -3,11 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/maxim.github.io/',  // Change this to match your repo name
   build: {
     outDir: 'dist',
-  },
-  server: {
-    port: 3001,
-  },
+    assetsDir: 'assets',
+    emptyOutDir: true
+  }
 })
